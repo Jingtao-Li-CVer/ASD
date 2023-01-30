@@ -1,0 +1,14 @@
+1 在mvtec上进行实验
+2 max的还在训练，怀疑max使得模型对极值不敏感，计划采用mean
+
+改成mean也不行，但是先不改回去。
+
+试试归一化采取单张归一化方式
+
+use the original algorithm
+
+data argument is similar to use MLRSNet data
+
+machsxxx distance is better than eulide distance
+
+在对比损失和svdd loss的基础上加一个重建损失，联合了低级特征和高级特征

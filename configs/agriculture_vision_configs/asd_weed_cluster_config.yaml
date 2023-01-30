@@ -1,0 +1,109 @@
+runner_module: runners - ASD_Runner
+random_seed: 121
+params:
+  epochs: 300
+  device: cuda:2
+  batch_size: 1
+  latent_dim: 5
+  image_size: 256
+  nu: 0.1
+  warm_up_n_iters: 100
+  change_center: true
+  embedding_num: 538000
+  loss_ratio: 1, 1, 1
+model:
+  name: models - ASD_Encoder
+  args:
+    pH: 15
+    pW: 15
+    imH: ${params.image_size}
+    imW: ${params.image_size}
+    latent_dim: ${params.latent_dim}
+    scales: 0.5, 1.0, 2.0
+    device: ${params.device}
+  ckpt_dir: ''
+  R: 3.0
+transforms:
+  train:
+  - name: albumentations - ToFloat
+    args:
+      max_value: 255
+  - name: albumentations - Resize
+    args:
+      height: ${params.image_size}
+      width: ${params.image_size}
+      p: 1
+  - name: albumentations - Normalize
+    args:
+      mean: 0.5, 0.5, 0.5, 0.5
+      std: 0.5, 0.5, 0.5, 0.5
+      max_pixel_value: 1.0
+  - name: albumentations.pytorch - ToTensorV2
+    args:
+      p: 1
+  test:
+  - name: albumentations - ToFloat
+    args:
+      max_value: 255
+  - name: albumentations - Resize
+    args:
+      height: ${params.image_size}
+      width: ${params.image_size}
+      p: 1
+  - name: albumentations - Normalize
+    args:
+      mean: 0.5, 0.5, 0.5, 0.5
+      std: 0.5, 0.5, 0.5, 0.5
+      max_pixel_value: 1.0
+  - name: albumentations.pytorch - ToTensorV2
+    args:
+      p: 1
+datasets:
+  train:
+    name: datasets - AgricultureVisonDataset
+    args:
+      rgb_dir: /data/ljt/supervised/Agriculture-Vision-2021/train/images/rgb
+      nir_dir: /data/ljt/supervised/Agriculture-Vision-2021/train/images/nir
+      labels_dir: /data/ljt/supervised/Agriculture-Vision-2021/train/labels/weed_cluster
+      filter_files_path: /home/ljt21/ad/ASD-code/datasets/filter_npy_files/weed_cluster/image_names_train_0.0.npy
+      is_training: true
+      diversity_transform: true
+  test:
+    name: datasets - AgricultureVisonDataset
+    args:
+      rgb_dir: /data/ljt/supervised/Agriculture-Vision-2021/val/images/rgb
+      nir_dir: /data/ljt/supervised/Agriculture-Vision-2021/val/images/nir
+      labels_dir: /data/ljt/supervised/Agriculture-Vision-2021/val/labels/weed_cluster
+      filter_files_path: /home/ljt21/ad/ASD-code/datasets/filter_npy_files/all_test.npy
+      is_training: false
+dataloaders:
+  train:
+    name: torch.utils.data - DataLoader
+    args:
+      batch_size: ${params.batch_size}
+      num_workers: 8
+      pin_memory: true
+      shuffle: true
+  test:
+    name: torch.utils.data - DataLoader
+    args:
+      batch_size: ${params.batch_size}
+      num_workers: 8
+      pin_memory: true
+      shuffle: false
+optimizer:
+  name: torch.optim - Adam
+  args:
+    lr: 1.0e-05
+    weight_decay: 1.0e-05
+scheduler:
+  name: torch.optim.lr_scheduler - CosineAnnealingWarmRestarts
+  args:
+    T_0: 10
+    T_mult: 2
+    eta_min: 0.0001
+    last_epoch: -1
+criterions:
+  MSE:
+    name: torch.nn - MSELoss
+    args: null
