@@ -18,7 +18,9 @@ This is a PyTorch implementation of the [AAAI2023 paper](http://arxiv.org/abs/23
 
 A novel anomaly segmentation model based on pixel descriptors (ASD) is implemented to segment anomaly patterns of the earth deviating from normal patterns, which plays an important role in various Earth vision applications. The ASD model incorporates the data argument for generating virtual abnormal samples, which can force the pixel descriptors to be compact for normal data and meanwhile to be diverse to avoid the model collapse problems when only positive samples participated in the training. In addition, the ASD introduced a multi-level and multi-scale feature extraction strategy for learning the low-level and semantic information to make the pixel descriptors feature-rich. The three conditions (compact, diverse, and feature-rich) direct the design of architecture and optimization.
 
-
+<p align="center">
+  <img src=./figs/sample.jpg width="600"> 
+</p>
 
 ### Preparation
 
