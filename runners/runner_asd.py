@@ -227,9 +227,6 @@ class ASD_Runner(BaseRunner):
 
             if self.cfg.datasets.train.name == 'datasets - AgricultureVisonDataset' and count > 2000:
                 break
-
-            if visualization and mb_gt.max() == 2:
-                continue
             
             mb_amap = 0
             with torch.no_grad():
@@ -265,10 +262,11 @@ class ASD_Runner(BaseRunner):
         artifacts["gt"] = list(ep_gt)
         
         if visualization:
-            savefig(epoch, artifacts["img"],  artifacts["gt"], artifacts["amap"], self.working_dir, self.mean, self.std, 255)  # save results on DeepGlobe
-            savefig(epoch, artifacts["img"],  artifacts["gt"], artifacts["amap"], self.working_dir, 1, 1, 255)  # save results on FAS
-            # savefig_argriculture_vision(epoch, artifacts["img"],  artifacts["gt"], artifacts["amap"], self.working_dir, self.mean, self.std, 255) # save results on Agriculture-Vision
-            # savefig_landslide_detection(epoch, artifacts["img"],  artifacts["gt"], artifacts["amap"], self.working_dir, self.mean, self.std, 255) # save results on Landslide4Sense
+            if mb_gt.max() != 2:
+                savefig(epoch, artifacts["img"],  artifacts["gt"], artifacts["amap"], self.working_dir, self.mean, self.std, 255)  # save results on DeepGlobe
+                savefig(epoch, artifacts["img"],  artifacts["gt"], artifacts["amap"], self.working_dir, 1, 1, 255)  # save results on FAS
+                # savefig_argriculture_vision(epoch, artifacts["img"],  artifacts["gt"], artifacts["amap"], self.working_dir, self.mean, self.std, 255) # save results on Agriculture-Vision
+                # savefig_landslide_detection(epoch, artifacts["img"],  artifacts["gt"], artifacts["amap"], self.working_dir, self.mean, self.std, 255) # save results on Landslide4Sense
 
 
     def save(self, epoch, save_best=False):
