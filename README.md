@@ -26,7 +26,8 @@ A novel anomaly segmentation model based on pixel descriptors (ASD) is implement
 
 1. Install required packages according to the requirements.txt.
 2. Download the datasets (i.e. Agriculture-vison, DeepGlobe, Landslide4sense and FAS) with the following link.
-    (https://pan.baidu.com/s/1lY5RfPOq_KIxvWJ4F8c0GA   password:171j)
+    (https://pan.baidu.com/s/1lY5RfPOq_KIxvWJ4F8c0GA   password:171j) 
+   
    Notice: The Agriculture-vison dataset can also be downloaded from this [link](https://www.agriculture-vision.com/agriculture-vision-2021/dataset-2021).
 
 
