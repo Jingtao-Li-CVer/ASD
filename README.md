@@ -54,3 +54,26 @@ ckpt_dir: 'ckpt_path'
 ```
 self._test(epoch, visualization=True)
 ```
+
+### Trained checkpoints
+
+1. Agriculture-vison dataset
+
+|Normal class | BaiduDrive | Normal class | BaiduDrive | Normal class | BaiduDrive|
+| --- | --- |  --- |  --- |  --- |  --- |
+| Drydown |  [Link](https://pan.baidu.com/s/1zRkr8WpXNQPBqYA8-GBLtQ?pwd=CVer) | Double plant |  [Link](https://pan.baidu.com/s/1nogMZYCt-0XYgioB4-GRQQ?pwd=CVer) | Endrow | [Link](https://pan.baidu.com/s/1Imszb20McNHazjSZh6K9_w?pwd=CVer) |
+| Weed cluster |  [Link](https://pan.baidu.com/s/1mSSJeUGXO-iylSz7RorGfA?pwd=CVer) | ND |  [Link](https://pan.baidu.com/s/1IurLCEIlHs8vdDOLqIdsWA?pwd=CVer) | Water | [Link](https://pan.baidu.com/s/1Igk2unnSJLJQu06-LgBlww?pwd=CVer) |
+
+2. DeepGlobe dataset
+
+|Normal class | BaiduDrive | Normal class | BaiduDrive | Normal class | BaiduDrive|
+| --- | --- |  --- |  --- |  --- |  --- |
+| Urban land |  [Link](https://pan.baidu.com/s/1YYCI2S0zha05sm5xbUfA7Q?pwd=CVer) | Agriculture |  [Link](https://pan.baidu.com/s/1pi7bfNWPRGWCHTrqnqhQSQ?pwd=CVer) | Range land |  [Link](https://pan.baidu.com/s/15MiDsFtby5acbQAXF9LaOg?pwd=CVer) |
+| Forest land |  [Link](https://pan.baidu.com/s/1uZka5h77jwp48oe5mriwdA?pwd=CVer) | Water |  [Link](https://pan.baidu.com/s/1Hb9n1fHtQnTShPm9PDD5tQ?pwd=CVer) | Barren land |  [Link](https://pan.baidu.com/s/1DEUSPpjVB2ChUu5iC68ijg?pwd=CVer) |
+
+3. FAS and Landslide4sense dataset
+
+|Dataset | BaiduDrive | Dataset | BaiduDrive |
+| --- | --- |  --- |  --- |
+| FAS |  [Link](https://pan.baidu.com/s/1OsUFQoyeG2Ks-uzUMH7jMQ?pwd=CVer) | Landslide4sense |  [Link](https://pan.baidu.com/s/1EJbPM1T9PPUOPsgqJjB0gQ?pwd=CVer) |
+
