@@ -58,9 +58,9 @@ self._test(epoch, visualization=True)
 ### Trained checkpoints
 
 1. Agriculture-vison dataset
-   Normal class | BaiduDrive | Normal class | BaiduDrive | Normal class | BaiduDrive
-:-|:-|:-|:-|:-|:-
-Urban land |  [Link](https://postechackr-my.sharepoint.com/:u:/g/personal/taehoon1018_postech_ac_kr/EaP6DogjMAVCtTKcC_Bx-YoBoBSWBo90lesVcMyuCN35NA?e=0DDohA&download=1) | Agriculture |  [Link](https://postechackr-my.sharepoint.com/:u:/g/personal/taehoon1018_postech_ac_kr/EaP6DogjMAVCtTKcC_Bx-YoBoBSWBo90lesVcMyuCN35NA?e=0DDohA&download=1) | Range land |  [Link](https://postechackr-my.sharepoint.com/:u:/g/personal/taehoon1018_postech_ac_kr/EaP6DogjMAVCtTKcC_Bx-YoBoBSWBo90lesVcMyuCN35NA?e=0DDohA&download=1) | N/A
-Urban land |  [Link](https://postechackr-my.sharepoint.com/:u:/g/personal/taehoon1018_postech_ac_kr/EaP6DogjMAVCtTKcC_Bx-YoBoBSWBo90lesVcMyuCN35NA?e=0DDohA&download=1) | Agriculture |  [Link](https://postechackr-my.sharepoint.com/:u:/g/personal/taehoon1018_postech_ac_kr/EaP6DogjMAVCtTKcC_Bx-YoBoBSWBo90lesVcMyuCN35NA?e=0DDohA&download=1) | Range land |  [Link](https://postechackr-my.sharepoint.com/:u:/g/personal/taehoon1018_postech_ac_kr/EaP6DogjMAVCtTKcC_Bx-YoBoBSWBo90lesVcMyuCN35NA?e=0DDohA&download=1) | N/A
 
+|Normal class | BaiduDrive | Normal class | BaiduDrive | Normal class | BaiduDrive|
+| --- | --- |  --- |  --- |  --- |  --- |
+| Urban land |  [Link](https://postechackr-my.sharepoint.com/:u:/g/personal/taehoon1018_postech_ac_kr/EaP6DogjMAVCtTKcC_Bx-YoBoBSWBo90lesVcMyuCN35NA?e=0DDohA&download=1) | Agriculture |  [Link](https://postechackr-my.sharepoint.com/:u:/g/personal/taehoon1018_postech_ac_kr/EaP6DogjMAVCtTKcC_Bx-YoBoBSWBo90lesVcMyuCN35NA?e=0DDohA&download=1) | Range land |  [Link](https://postechackr-my.sharepoint.com/:u:/g/personal/taehoon1018_postech_ac_kr/EaP6DogjMAVCtTKcC_Bx-YoBoBSWBo90lesVcMyuCN35NA?e=0DDohA&download=1) |
+| Urban land |  [Link](https://postechackr-my.sharepoint.com/:u:/g/personal/taehoon1018_postech_ac_kr/EaP6DogjMAVCtTKcC_Bx-YoBoBSWBo90lesVcMyuCN35NA?e=0DDohA&download=1) | Agriculture |  [Link](https://postechackr-my.sharepoint.com/:u:/g/personal/taehoon1018_postech_ac_kr/EaP6DogjMAVCtTKcC_Bx-YoBoBSWBo90lesVcMyuCN35NA?e=0DDohA&download=1) | Range land |  [Link](https://postechackr-my.sharepoint.com/:u:/g/personal/taehoon1018_postech_ac_kr/EaP6DogjMAVCtTKcC_Bx-YoBoBSWBo90lesVcMyuCN35NA?e=0DDohA&download=1) |
 
