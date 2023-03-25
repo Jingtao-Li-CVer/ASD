@@ -54,25 +54,3 @@ ckpt_dir: 'ckpt_path'
 ```
 self._test(epoch, visualization=True)
 ```
-
-### Trained checkpoints
-
-1. Agriculture-vison dataset
-
-|Normal class | BaiduDrive | Normal class | BaiduDrive | Normal class | BaiduDrive|
-| --- | --- |  --- |  --- |  --- |  --- |
-| Drydown |  [Link](https://postechackr-my.sharepoint.com/:u:/g/personal/taehoon1018_postech_ac_kr/EaP6DogjMAVCtTKcC_Bx-YoBoBSWBo90lesVcMyuCN35NA?e=0DDohA&download=1) | Double plant |  [Link](https://postechackr-my.sharepoint.com/:u:/g/personal/taehoon1018_postech_ac_kr/EaP6DogjMAVCtTKcC_Bx-YoBoBSWBo90lesVcMyuCN35NA?e=0DDohA&download=1) | Endrow | [Link](https://postechackr-my.sharepoint.com/:u:/g/personal/taehoon1018_postech_ac_kr/EaP6DogjMAVCtTKcC_Bx-YoBoBSWBo90lesVcMyuCN35NA?e=0DDohA&download=1) |
-| Weed cluster |  [Link](https://postechackr-my.sharepoint.com/:u:/g/personal/taehoon1018_postech_ac_kr/EaP6DogjMAVCtTKcC_Bx-YoBoBSWBo90lesVcMyuCN35NA?e=0DDohA&download=1) | ND |  [Link](https://postechackr-my.sharepoint.com/:u:/g/personal/taehoon1018_postech_ac_kr/EaP6DogjMAVCtTKcC_Bx-YoBoBSWBo90lesVcMyuCN35NA?e=0DDohA&download=1) | Water | [Link](https://postechackr-my.sharepoint.com/:u:/g/personal/taehoon1018_postech_ac_kr/EaP6DogjMAVCtTKcC_Bx-YoBoBSWBo90lesVcMyuCN35NA?e=0DDohA&download=1) |
-
-2. DeepGlobe dataset
-
-|Normal class | BaiduDrive | Normal class | BaiduDrive | Normal class | BaiduDrive|
-| --- | --- |  --- |  --- |  --- |  --- |
-| Urban land |  [Link](https://postechackr-my.sharepoint.com/:u:/g/personal/taehoon1018_postech_ac_kr/EaP6DogjMAVCtTKcC_Bx-YoBoBSWBo90lesVcMyuCN35NA?e=0DDohA&download=1) | Agriculture |  [Link](https://postechackr-my.sharepoint.com/:u:/g/personal/taehoon1018_postech_ac_kr/EaP6DogjMAVCtTKcC_Bx-YoBoBSWBo90lesVcMyuCN35NA?e=0DDohA&download=1) | Range land |  [Link](https://postechackr-my.sharepoint.com/:u:/g/personal/taehoon1018_postech_ac_kr/EaP6DogjMAVCtTKcC_Bx-YoBoBSWBo90lesVcMyuCN35NA?e=0DDohA&download=1) |
-| Forest land |  [Link](https://postechackr-my.sharepoint.com/:u:/g/personal/taehoon1018_postech_ac_kr/EaP6DogjMAVCtTKcC_Bx-YoBoBSWBo90lesVcMyuCN35NA?e=0DDohA&download=1) | Water |  [Link](https://postechackr-my.sharepoint.com/:u:/g/personal/taehoon1018_postech_ac_kr/EaP6DogjMAVCtTKcC_Bx-YoBoBSWBo90lesVcMyuCN35NA?e=0DDohA&download=1) | Barren land |  [Link](https://postechackr-my.sharepoint.com/:u:/g/personal/taehoon1018_postech_ac_kr/EaP6DogjMAVCtTKcC_Bx-YoBoBSWBo90lesVcMyuCN35NA?e=0DDohA&download=1) |
-
-3. FAS and Landslide4sense dataset
-
-|Dataset | BaiduDrive | Dataset | BaiduDrive |
-| --- | --- |  --- |  --- |
-| FAS |  [Link](https://postechackr-my.sharepoint.com/:u:/g/personal/taehoon1018_postech_ac_kr/EaP6DogjMAVCtTKcC_Bx-YoBoBSWBo90lesVcMyuCN35NA?e=0DDohA&download=1) | Landslide4sense |  [Link](https://postechackr-my.sharepoint.com/:u:/g/personal/taehoon1018_postech_ac_kr/EaP6DogjMAVCtTKcC_Bx-YoBoBSWBo90lesVcMyuCN35NA?e=0DDohA&download=1) |
