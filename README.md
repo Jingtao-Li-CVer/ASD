@@ -1,5 +1,7 @@
 ## Anomaly Segmentation for High-Resolution Remote Sensing Images Based on Pixel Descriptors (AAAI2023)
 
+A new task in remote sensing community!
+
 <p align="center">
   <img src=./figs/ASD.jpg width="600"> 
 </p>
