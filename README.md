@@ -1,7 +1,5 @@
 ## Anomaly Segmentation for High-Resolution Remote Sensing Images Based on Pixel Descriptors (AAAI2023)
 
-A new task in remote sensing community!
-
 <p align="center">
   <img src=./figs/ASD.jpg width="600"> 
 </p>
@@ -15,6 +13,12 @@ This is a PyTorch implementation of the [AAAI2023 paper](http://arxiv.org/abs/23
   year = {2023},
 }
 ```
+
+### Outline
+1. Anomaly segmentation for HRS images is a new task in remote sensing community, which is of great significance for environmental monitoring application.
+2. Proposed model ASD sets the first baseline, which aims to learn better normal descriptors.
+3. FAS dataset is made and publicly available.
+
 
 ### Introduction
 
