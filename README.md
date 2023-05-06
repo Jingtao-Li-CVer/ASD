@@ -1,7 +1,7 @@
 ## Anomaly Segmentation for High-Resolution Remote Sensing Images Based on Pixel Descriptors (AAAI2023)
 
 <p align="center">
-  <img src=./figs/ASD.jpg width="600"> 
+  <img src=./figs/ASD.jpg width="650"> 
 </p>
 
 This is a PyTorch implementation of the [AAAI2023 paper](http://arxiv.org/abs/2301.13422) (to be published):
