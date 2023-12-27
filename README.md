@@ -4,7 +4,7 @@
   <img src=./figs/ASD.jpg width="650"> 
 </p>
 
-This is a PyTorch implementation of the [AAAI2023 paper](http://arxiv.org/abs/2301.13422) (to be published):
+This is a PyTorch implementation of the [AAAI2023 paper](https://ojs.aaai.org/index.php/AAAI/article/view/25563/25335):
 ```
 @Article{Li2022ASD,
   author = {Jingtao Li and Xinyu Wang and Hengwei Zhao and Shaoyu Wang and Yanfei Zhong},
