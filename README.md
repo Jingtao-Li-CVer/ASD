@@ -15,7 +15,7 @@ This is a PyTorch implementation of the [AAAI2023 paper](https://ojs.aaai.org/in
 ```
 
 ### Outline
-1. Anomaly segmentation for HRS images is a new task in remote sensing community, which is of great significance for environmental monitoring application.
+1. Anomaly segmentation for HRS images is a new task in remote sensing community, which is of great significance for environmental monitoring application. 
 2. Proposed model ASD sets the first baseline, which aims to learn better normal descriptors.
 3. FAS dataset is made and publicly available.
 
