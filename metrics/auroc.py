@@ -16,12 +16,12 @@ sys.path.append("/home/ljt21/ad/RSAD/metrics/")
 from iou_metric import SegEvaluator
 
 
-def compute_auroc(epoch: int, ep_reconst, ep_gt, working_dir: str, image_level=False, save_image=False, compute_iou=True) -> float:
+def compute_auroc(epoch: int, ep_amaps, ep_gt, working_dir: str, image_level=False, save_image=False, compute_iou=True) -> float:
     """Compute Area Under the Receiver Operating Characteristic Curve (ROC AUC)
 
     Args:
         epoch (int): Current epoch
-        ep_reconst (NDArray): Reconstructed images in a current epoch
+        ep_amaps (NDArray): Anomaly maps in a current epoch
         ep_gt (NDArray): Ground truth masks in a current epoch
 
     Returns:
@@ -34,7 +34,7 @@ def compute_auroc(epoch: int, ep_reconst, ep_gt, working_dir: str, image_level=F
 
 
     y_score, y_true = [], []
-    for i, (amap, gt) in enumerate(tqdm(zip(ep_reconst, ep_gt))):
+    for i, (amap, gt) in enumerate(tqdm(zip(ep_amaps, ep_gt))):
         anomaly_scores = amap[np.where(gt == 0)]
         normal_scores = amap[np.where(gt == 1)]
         y_score += anomaly_scores.tolist()
@@ -52,7 +52,7 @@ def compute_auroc(epoch: int, ep_reconst, ep_gt, working_dir: str, image_level=F
         threshold = thresholds[maxindex]
         evaluator = SegEvaluator(2)
         evaluator.reset()
-        for i, (amap, gt) in enumerate(tqdm(zip(ep_reconst, ep_gt))):
+        for i, (amap, gt) in enumerate(tqdm(zip(ep_amaps, ep_gt))):
             amap = np.where(amap > threshold, 1, 0)
             amap = amap.astype(np.int8)
             evaluator.add_batch(gt, amap)
